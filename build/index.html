@@ -31,7 +31,7 @@
 
     <div class="costs">
       <div class="container">
-        <div class="costs__title">Вы постоянно несете <span>затраты</span>....</div>
+        <h2 class="costs__title">Вы постоянно несете <span>затраты</span>....</h2>
         <ul class="costs__list">
           <li class="costs__item">На инкассацию</li>
           <li class="costs__item">На зарплаты кассирам</li>
@@ -39,10 +39,82 @@
           <li class="costs__item">На приобретение и содержание кассы</li>
         </ul>
         <div class="costs__image"><img src="img/costs.png" alt="pic" width="373" height="373"></div>
+        <div class="costs__description">...может быть хватит? <span>Начните экономить</span> вместе с нами!</div>
+      </div>
+    </div>
 
+    <div class="advantage-block">
+      <div class="container">
+        <h2 class="advantage__title">Самоинкассация обеспечит вам:</h2>
+        <div class="advantages">
+          <div class="advantage">
+            <div class="advantage__icon advantage__icon--cash-register"></div>
+            <p class="advantage__description">Отсутствие расходов на кассовое оборудование и зарплату кассиру</p>
+          </div>
+          <div class="advantage">
+            <div class="advantage__icon advantage__icon--bus"></div>
+            <p class="advantage__description">Снижение расходов на инкассацию и пересчет</p>
+          </div>
+          <div class="advantage">
+            <div class="advantage__icon advantage__icon--clock"></div>
+            <p class="advantage__description">Оплату 24/7</p>
+          </div>
+          <div class="advantage">
+            <div class="advantage__icon advantage__icon--monitor"></div>
+            <p class="advantage__description">Возможность контроля за поступлением денежных средств в режиме онлайн</p>
+          </div>
+        </div>
 
       </div>
     </div>
+
+    <div class="work">
+      <div class="container">
+        <h2 class="work__title">Как это работает?</h2>
+        <div class="work__description">
+          <p class="work__description-block work__description-block--left">Клиент или сотрудник Вашей организации вносит денежные средства в банкомат в удобное время.</p>
+          <p class="work__description-block work__description-block--right">Мы перечисляем денежные средства на Ваш р/с и самостоятельно инкассируем банкомат по мере заполнения.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="map">
+      <div class="container">
+        <p class="map__description">Вы можете установить банкомат в Вашем офисе, а можете использовать любой из наших 3200</p>
+        <div class="map__caption">Карта плотности банкоматов Элекснет в Москве и МО</div>
+      </div>
+    </div>
+
+    <div class="order">
+      <div class="container">
+        <h2 class="order__title">Работайте с нами!</h2>
+        <div class="order__form">
+          <form method="post" action="send.php">
+            <div class="order__line">
+              <input class="order__field" type="text" name="name" placeholder="Имя" required>
+              <input class="order__field" type="text" name="company" placeholder="Название компании" required>
+              <input class="order__field" type="text" name="phone" id="phone" placeholder="Телефон" required>
+            </div>
+            <div class="order__line">
+              <button type="submit" class="btn">Отправить заявку</button>
+            </div>
+          </form>
+        </div>
+        <p class="order__description">Или позвоните нам по номеру <a href="tel:+74956621500" class="">+7(495) 662-15-00 (доб. 628, 494)</a>, если у вас еще остались вопросы</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__line">
+          <p class="footer__text footer__text--1">123557, г. Москва, Электрический пер., д.3/10, стр.1, 4 этаж</p>
+          <a class="footer__link" href="tel:+74956621500">+7(495) 662-15-00 (доб. 628, 494)</a>
+        </div>
+        <div class="footer__line">
+          <p class="footer__text">© Компания «Элекснет», 2006-2016.</p>
+        </div>
+      </div>
+    </footer>
 
 
     <script src="js/script.min.js"></script>
