@@ -1,12 +1,10 @@
 @import "base/__normalize.scss";
 @import "base/__variable.scss";
-@import "base/typography.scss";
 
 @import "base/mixins.scss";
 
 @import "base/buttons.scss";
 @import "base/forms.scss";
-@import "base/grid.scss";
 @import "base/popup.scss";
 
 // подключение анимации
@@ -17,8 +15,13 @@
 
 @import "components/footer.scss";
 @import "components/header.scss";
-@import "components/logo.scss";
-@import "components/menu.scss";
+
+@import "components/advantage-block.scss";
+@import "components/costs.scss";
+@import "components/map.scss";
+@import "components/order.scss";
+@import "components/promo.scss";
+@import "components/work.scss";
 
 
 
@@ -26,37 +29,26 @@ body {
   background: white;
   margin: 0px;
   padding: 0px;
-  min-width: 320px;
-  @media ($tablet-width) {
-    min-width: 768px;
-  }
-  @media ($desktop-width) {
-    min-width: 1200px;
-  }
+  min-width: 1200px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #1d1d1b;
+  text-transform: none;
 }
 
 .container {
-  width: 320px;
+  width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
-
-  @media ($tablet-width) {
-    width: 100%;
-  }
-
-  @media ($desktop-width) {
-    width: 1200px;
-  }
+  @include clearfix;
 }
 
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
+h1, h2, p {
+  margin: 0;
+}
 
-  @media ($tablet-width) {
-    width: 100%;
-  }
-
-  @media ($desktop-width) {
-    width: 1200px;
-  }
+ul {
+  padding: 0;
 }
