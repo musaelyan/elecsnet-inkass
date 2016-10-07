@@ -1,8 +1,8 @@
 {
-  "name": "Элекснет - самоинкасация",
+  "name": "grunt-project-template",
   "version": "0.1.0",
   "license": "MIT",
-  "description": "Лендинг по продаже услуг",
+  "description": "Базовый шаблон, для начала работы над проектом на базе сборщика Grunt.",
   "dependencies": {
     "grunt": "^1.0.0",
     "grunt-autoprefixer": "^3.0.4",

@@ -2,20 +2,56 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
-		<title>Title</title>
-    <meta name="robots" content="noindex, nofollow">
-		<meta name="keywords" content="keyword1, keywords2">
-		<meta name="description" content="web-page description">
+    <title>Элекснет - самоинкассация</title>
+		<meta name="keywords" content="самоинкассация, Элекснет, касса, Яндекс.Такси, сервис, услуги для бизнеса, автоматизация">
+		<meta name="description" content="Самоинкассация - услуга, позволяющая инкассировать выручку через устройство самообслуживания в любой удобный момент">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.min.css">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="http://www.elecsnet.ru/favicon.ico" type="image/x-icon">
 
 	</head>
 	<body>
+    <header class="header">
+      <div class="container">
+        <div class="logo"><img src="img/logo.png" alt="Elecsnet" width="222" height="66"></div>
+        <div class="header__contacts header__contacts--phone"><a href="tel:+74956621500" class="header__link">+7(495) 662-15-00 (доб. 628, 494)</a></div>
+        <div class="header__contacts header__contacts--email"><a href="mailto:dokk@elecsnet.ru?subject=Сотрудничество%20с%20Элекснет" class="header__link">dokk@elecsnet.ru</a></div>
+      </div>
+    </header>
 
-    <h1>Hello1</h1>
-    <a href="" class="btn">хер</a>
+    <div class="promo">
+      <div class="container">
+        <h1 class="promo__title"><span>Самоинкассация</span> - услуга, позволяющая инкассировать выручку через устройство самообслуживания в любой удобный момент</h1>
+        <div class="promo__btn-block">
+          <a href="#" class="btn">Получить консультацию</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="costs">
+      <div class="container">
+        <div class="costs__title">Вы постоянно несете <span>затраты</span>....</div>
+        <ul class="costs__list">
+          <li class="costs__item">На инкассацию</li>
+          <li class="costs__item">На зарплаты кассирам</li>
+          <li class="costs__item">На пересчет</li>
+          <li class="costs__item">На приобретение и содержание кассы</li>
+        </ul>
+        <div class="costs__image"><img src="img/costs.png" alt="pic" width="373" height="373"></div>
+
+
+      </div>
+    </div>
+
 
     <script src="js/script.min.js"></script>
+    <script type="text/javascript">
+      $(function($){
+        $("#phone1").mask("+7(999) 999-9999");
+        $("#phone2").mask("+7(999) 999-9999");
+        $("#phone3").mask("+7(999) 999-9999");
+      });
+    </script>
 	</body>
 </html>
