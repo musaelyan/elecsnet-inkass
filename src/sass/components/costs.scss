@@ -17,7 +17,7 @@
   &__title {
     font-size: 20px;
     font-weight: 300;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
     span {
       font-weight: 400;
@@ -33,6 +33,67 @@
 
   &__item {
     margin-bottom: 30px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 290px;
+      height: 1px;
+      background: #80807f;
+      top: 15px;
+      z-index: 50;
+    }
+
+    &--1:before {
+      left: 160px;
+      width: 320px;
+    }
+
+    &--2:before {
+      left: 230px;
+      width: 375px;
+    }
+
+    &--3:before {
+      left: 125px;
+      width: 480px;
+    }
+
+    &--4:before {
+      left: 370px;
+      width: 300px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: $orange;
+      border: 1px solid #80807f;
+      top: 9px;
+      z-index: 60;
+    }
+
+    &--1:after {
+      left: 480px;
+    }
+
+    &--2:after {
+      left: 605px;
+    }
+
+    &--3:after {
+      left: 605px;
+    }
+
+    &--4:after {
+      left: 670px;
+    }
+
+
   }
 
   &__description {
