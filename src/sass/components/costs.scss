@@ -1,3 +1,50 @@
 .costs {
 
+  &__image {
+    position: absolute;
+    width: 373px;
+    height: auto;
+    top: 0;
+    right: 220px;
+
+    img {
+      display: block;
+      width: 373px;
+      height: auto;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 80px;
+
+    span {
+      font-weight: 400;
+      color: $orange;
+    }
+  }
+
+  &__list {
+    font-size: 20px;
+    font-weight: 300;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 100px;
+
+    span {
+      font-weight: 400;
+      color: $orange;
+    }
+  }
+
 }

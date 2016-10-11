@@ -1,3 +1,28 @@
 .map {
+  background-color: $black;
+  color: #fff;
 
+  &__description {
+    width: 600px;
+    font-size: 20px;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    left: 330px;
+  }
+
+}
+
+.container--map:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -54px;
+  width: 434px;
+  height: 410px;
+  background: url("../img/map.png") no-repeat;
+  z-index: 10;
 }

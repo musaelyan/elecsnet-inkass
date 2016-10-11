@@ -1,4 +1,41 @@
 .footer {
   background: $black;
+  color: #818080;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 18px;
+
+
+  &__line {
+    @include clearfix;
+    padding-top: 30px;
+  }
+
+  &__text {
+    float: left;
+    width: 550px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+    float: right;
+    max-width: 300px;
+    text-align: right;
+    text-decoration: none;
+    color: $orange;
+    transition: all 0.3s ease;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $black;
+    &:hover {
+      color: $orange-light;
+      border-bottom: 1px solid $orange-light;
+    }
+    &:active {
+      color:  $orange-dark;
+      border-bottom: 1px solid $orange-dark;
+    }
+  }
 
 }
