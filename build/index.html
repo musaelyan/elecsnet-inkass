@@ -30,7 +30,7 @@
       <div class="container container--promo">
         <h1 class="promo__title"><span>Самоинкассация</span> - услуга, позволяющая инкассировать выручку через устройство самообслуживания <span>в любой удобный</span> момент</h1>
         <div class="promo__btn-block">
-          <a href="#" class="btn">Получить консультацию</a>
+          <a href="#order" class="btn js-scroll">Получить консультацию</a>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <div class="order">
+    <div class="order" id="order">
       <div class="container">
         <h2 class="order__title">Работайте с нами!</h2>
         <div class="order__form">
@@ -130,5 +130,24 @@
         $("#phone").mask("+7(999) 999-9999");
       });
     </script>
+    <script type="text/javascript">
+  		(function($){
+  			$(window).load(function(){
+
+  				/* Page Scroll to id fn call */
+  				$(".js-scroll").mPageScroll2id({
+  					highlightSelector:".js-scroll"
+  				});
+
+  				/* demo functions */
+  				$("a[rel='next']").click(function(e){
+  					e.preventDefault();
+  					var to=$(this).parent().parent("section").next().attr("id");
+  					$.mPageScroll2id("scrollTo",to);
+  				});
+
+  			});
+  		})(jQuery);
+  	</script>
 	</body>
 </html>
