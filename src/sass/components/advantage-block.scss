@@ -7,11 +7,28 @@
   padding-top: 140px;
   padding-bottom: 180px;
 
+  @media ($tablet-width) {
+    background-image: url("../img/advantage-bg-tablet.jpg");
+    padding-top: 100px;
+  }
+
+  @media ($mobile-width) {
+    background-image: url("../img/advantage-bg-mobile.jpg");
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
   &__title {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
     padding-bottom: 90px;
+    @media ($tablet-width) {
+      padding-bottom: 20px;
+    }
+    @media ($mobile-width) {
+      font-size: 19px;
+    }
   }
 }
 
@@ -26,8 +43,26 @@
   font-size: 20px;
   width: 255px;
   margin-right: 50px;
+
   &:last-child {
     margin-right: 0;
+  }
+
+  @media ($tablet-width) {
+    margin-right: 0;
+    padding-top: 70px;
+    &:nth-child(odd) {
+      margin-right: 70px;
+    }
+  }
+
+  @media ($mobile-width) {
+    margin-right: 0px;
+    padding-top: 40px;
+    font-size: 17px;
+    &:nth-child(odd) {
+      margin-right: 0px;
+    }
   }
 
   &__icon {
@@ -38,6 +73,9 @@
     margin: 0 auto;
     margin-bottom: 40px;
     position: relative;
+    @media ($tablet-width) {
+      margin-bottom: 20px;
+    }
 
     &:before {
       position: absolute;

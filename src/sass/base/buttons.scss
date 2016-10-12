@@ -23,4 +23,9 @@
   &:active {
     opacity: 1;
   }
+
+  @media ($mobile-width) {
+    font-size: 15px;
+    padding: 10px 40px;
+  }
 }

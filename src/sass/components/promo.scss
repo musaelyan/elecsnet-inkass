@@ -12,6 +12,9 @@
     left: -150px;
     z-index: -5;
     transform: rotate(-5deg);
+    @media ($mobile-width) {
+      height: 520px;
+    }
   }
 
   &__title {
@@ -22,6 +25,11 @@
 
     span {
       font-weight: 500;
+    }
+
+    @media ($mobile-width) {
+      font-size: 19px;
+      margin-bottom: 20px;
     }
   }
 
@@ -41,5 +49,16 @@
     width: 242px;
     height: 550px;
     background: url("../img/terminal.png") no-repeat;
+    @media ($tablet-width) {
+      top: 60px;
+      left: 50px;
+    }
+
+    @media ($mobile-width) {
+      background: url("../img/terminal-mobile.png") no-repeat;
+      width: 149px;
+      height: 335px;
+      left: 10px;
+    }
   }
 }

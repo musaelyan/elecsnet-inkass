@@ -12,12 +12,34 @@
       width: 373px;
       height: auto;
     }
+
+    @media ($tablet-width) {
+      right: 0px;
+    }
+
+    @media ($mobile-width) {
+      width: 246px;
+      height: auto;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 140px;
+      img {
+        width: 246px;
+        height: auto;
+      }
+    }
+
   }
 
   &__title {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 70px;
+
+    @media ($mobile-width) {
+        font-size: 17px;
+        margin-bottom: 200px;
+    }
 
     span {
       font-weight: 400;
@@ -29,11 +51,50 @@
     font-size: 20px;
     font-weight: 300;
     list-style: none;
+    @media ($mobile-width) {
+        font-size: 15px;
+    }
   }
 
   &__item {
     margin-bottom: 30px;
     position: relative;
+    @media ($mobile-width) {
+        position: absolute;
+    }
+
+    &--1 {
+      @media ($mobile-width) {
+        top: 70px;
+        left: 10px;
+      }
+    }
+
+    &--2 {
+      @media ($mobile-width) {
+        top: 70px;
+        right: 10px;
+        text-align: right;
+      }
+    }
+
+    &--3 {
+      @media ($mobile-width) {
+        top: 430px;
+        left: 10px;
+      }
+    }
+
+    &--4 {
+      @media ($mobile-width) {
+        top: 430px;
+        right: 10px;
+        width: 200px;
+        text-align: right;
+      }
+    }
+
+
 
     &:before {
       position: absolute;
@@ -48,21 +109,49 @@
     &--1:before {
       left: 160px;
       width: 320px;
+      @media ($mobile-width) {
+        left: 80px;
+        width: 1px;
+        height: 130px;
+        transform: rotate(-15deg);
+        top: 20px;
+      }
     }
 
     &--2:before {
       left: 230px;
       width: 375px;
+      @media ($mobile-width) {
+        left: 50px;
+        width: 1px;
+        height: 165px;
+        transform: rotate(15deg);
+        top: 20px;
+      }
     }
 
     &--3:before {
       left: 125px;
       width: 480px;
+      @media ($mobile-width) {
+        top: -185px;
+        left: 110px;
+        width: 1px;
+        height: 215px;
+        transform: rotate(45deg);
+      }
     }
 
     &--4:before {
       left: 370px;
       width: 300px;
+      @media ($mobile-width) {
+        top: -85px;
+        left: 130px;
+        width: 1px;
+        height: 85px;
+        transform: rotate(-30deg);
+      }
     }
 
     &:after {
@@ -79,18 +168,34 @@
 
     &--1:after {
       left: 480px;
+      @media ($mobile-width) {
+        top: 150px;
+        left: 95px;
+      }
     }
 
     &--2:after {
       left: 605px;
+      @media ($mobile-width) {
+        top: 175px;
+        left: 23px;
+      }
     }
 
     &--3:after {
       left: 605px;
+      @media ($mobile-width) {
+        top: -155px;
+        left: 180px;
+      }
     }
 
     &--4:after {
       left: 670px;
+      @media ($mobile-width) {
+        top: -85px;
+        left: 105px;
+      }
     }
 
 
@@ -105,6 +210,12 @@
     span {
       font-weight: 400;
       color: $orange;
+    }
+
+    @media ($mobile-width) {
+        padding-top: 300px;
+        font-size: 17px;
+        padding-bottom: 30px;
     }
   }
 

@@ -5,6 +5,14 @@
   &__description {
     width: 600px;
     font-size: 20px;
+    @media ($tablet-width) {
+      width: 350px;
+    }
+    @media ($mobile-width) {
+      font-size: 17px;
+      text-align: center;
+      width: 300px;  
+    }
   }
 
   &__caption {
@@ -12,6 +20,14 @@
     bottom: 20px;
     font-size: 12px;
     left: 330px;
+    @media ($tablet-width) {
+      left: 0;
+    }
+    @media ($mobile-width) {
+      text-align: center;
+      left: 0;
+      top: 150px;
+    }
   }
 
 }
@@ -25,4 +41,21 @@
   height: 410px;
   background: url("../img/map.png") no-repeat;
   z-index: 10;
+  @media ($tablet-width) {
+    width: 350px;
+    height: 330px;
+    background: url("../img/map-tablet.png") no-repeat;
+    top: -10px;
+    right: -15px;
+  }
+
+  @media ($mobile-width) {
+    background: url("../img/map-mobile.png") no-repeat;
+    top: -70px;
+    right: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 239px;
+    height: 199px;
+  }
 }

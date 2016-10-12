@@ -36,6 +36,13 @@ body {
   font-weight: 300;
   color: #1d1d1b;
   text-transform: none;
+  @media ($tablet-width) {
+    min-width: 768px;
+  }
+  @media ($mobile-width) {
+    min-width: 320px;
+    font-size: 15px;
+  }
 }
 
 .container {
@@ -45,23 +52,58 @@ body {
   margin: 0 auto;
   @include clearfix;
 
+  @media ($tablet-width) {
+    width: 768px;
+    padding: 0 15px;
+  }
+  @media ($mobile-width) {
+    width: 320px;
+    padding: 0 10px;
+  }
+
   &--promo {
     padding: 160px 200px 240px 400px;
+    @media ($tablet-width) {
+      padding: 140px 40px 240px 300px;
+    }
+    @media ($mobile-width) {
+      padding: 40px 15px 100px 120px;
+    }
   }
 
   &--costs {
     padding: 0 220px 100px 220px;
     position: relative;
+    @media ($tablet-width) {
+      padding: 0 15px;
+      padding-bottom: 80px;
+    }
+    @media ($mobile-width) {
+      padding: 0 10px;
+    }
   }
 
   &--work {
     padding: 0 90px;
     position: relative;
+    @media ($tablet-width) {
+      padding: 0 15px;
+    }
+    @media ($mobile-width) {
+      padding: 0 10px;
+    }
   }
 
   &--map {
     position: relative;
     padding: 80px 100px;
+    @media ($tablet-width) {
+      padding: 60px 0px;
+    }
+    @media ($mobile-width) {
+      padding: 60px 10px;
+      padding-top: 220px;
+    }
   }
 }
 

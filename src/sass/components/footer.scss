@@ -5,6 +5,11 @@
   padding-bottom: 60px;
   font-size: 18px;
 
+  @media ($mobile-width) {
+    font-size: 17px;
+    text-align: center;
+  }
+
 
   &__line {
     @include clearfix;
@@ -16,6 +21,13 @@
     width: 550px;
     padding: 0;
     margin: 0;
+    @media ($tablet-width) {
+      width: 400px;
+    }
+    @media ($mobile-width) {
+      float: none;
+      width: 300px;
+    }
   }
 
   &__link {
@@ -35,6 +47,13 @@
     &:active {
       color:  $orange-dark;
       border-bottom: 1px solid $orange-dark;
+    }
+
+    @media ($mobile-width) {
+      float: none;
+      text-align: center;
+      margin-top: 20px;
+      min-width: 100px;
     }
   }
 
