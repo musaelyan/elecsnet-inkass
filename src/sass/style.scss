@@ -38,6 +38,7 @@ body {
   text-transform: none;
   @media ($tablet-width) {
     min-width: 768px;
+    max-width: 1199px;
   }
   @media ($mobile-width) {
     min-width: 320px;
@@ -60,6 +61,7 @@ body {
     width: 320px;
     padding: 0 10px;
   }
+
 
   &--promo {
     padding: 160px 200px 240px 400px;
